@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sunil S Shinde — Technical Lead | Full Stack Developer</title>
+<meta name="description" content="Sunil S Shinde — Technical Lead and Full Stack Developer with 15+ years in PHP, Laravel, Node.js, React and AWS.">
+<style>
+:root{
+  --teal-dark:#2f7f96;
+  --teal:#3fa5bf;
+  --teal-deep:#1f6b82;
+  --ink:#3b4a57;
+  --ink-strong:#1f2d3a;
+  --muted:#8aa0b2;
+  --line:#e3ebf0;
+  --bg:#f4f7f9;
+  --paper:#fcfdfd;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Helvetica Neue",Arial,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:15px}
+a{color:var(--teal-deep);text-decoration:none}
+a:hover{text-decoration:underline}
+
+.page{max-width:1100px;margin:32px auto;display:grid;grid-template-columns:1fr 320px;background:var(--paper);box-shadow:0 10px 40px rgba(31,45,58,.12);border-radius:6px;overflow:hidden}
+
+/* ---------- main ---------- */
+main{padding:48px 44px 56px}
+section{margin-bottom:44px}
+section:last-child{margin-bottom:0}
+.sec-title{display:flex;align-items:center;gap:12px;margin-bottom:22px;color:var(--teal-deep);font-weight:400;font-size:22px;letter-spacing:.5px;text-transform:uppercase}
+.sec-title .ico{flex:none;width:32px;height:32px;border-radius:50%;background:var(--teal-deep);display:grid;place-items:center}
+.sec-title svg{width:16px;height:16px;fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+.summary p{color:var(--ink)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:22px}
+.stat{border:1px solid var(--line);border-radius:6px;padding:12px 10px;text-align:center;background:#fff}
+.stat b{display:block;font-size:22px;color:var(--teal-deep);font-weight:600}
+.stat span{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.6px}
+
+.job{padding:0 0 26px;margin-bottom:26px;border-bottom:1px solid var(--line);position:relative}
+.job:last-child{border-bottom:0;margin-bottom:0;padding-bottom:0}
+.job-head{display:flex;justify-content:space-between;gap:16px;align-items:baseline;flex-wrap:wrap}
+.job-role{font-size:17px;color:var(--ink-strong);font-weight:500}
+.job-date{color:var(--muted);font-size:14px;white-space:nowrap}
+.job-co{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--teal);font-size:14px;margin-bottom:10px}
+.job-co .loc{color:var(--muted)}
+.job ul{list-style:none;padding-left:4px}
+.job li{position:relative;padding-left:18px;margin:5px 0;font-size:14.5px}
+.job li::before{content:"";position:absolute;left:2px;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--teal)}
+.badge{display:inline-block;font-size:11px;letter-spacing:.6px;text-transform:uppercase;color:#fff;background:var(--teal);border-radius:20px;padding:1px 9px;margin-left:8px;vertical-align:middle}
+
+.skill-group{display:grid;grid-template-columns:170px 1fr;gap:6px 18px;padding:12px 0;border-bottom:1px solid var(--line)}
+.skill-group:last-child{border-bottom:0}
+.skill-group h3{font-size:14px;font-weight:600;color:var(--ink-strong)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-size:13px;padding:2px 11px;border-radius:20px;background:#e8f3f7;color:var(--teal-deep);border:1px solid #d3e8ef}
+
+/* ---------- sidebar ---------- */
+aside{background:linear-gradient(to bottom,var(--teal-dark) 0,var(--teal-dark) 330px,var(--teal) 330px);color:#fff}
+.side-inner{position:sticky;top:0;padding:0 0 40px}
+.profile{padding:44px 28px 28px;text-align:center}
+.avatar{width:112px;height:112px;margin:0 auto 18px;border-radius:50%;background:#fff;color:var(--teal-deep);display:grid;place-items:center;font-size:40px;font-weight:600;letter-spacing:1px;border:4px solid rgba(255,255,255,.55)}
+.profile h1{font-size:34px;line-height:1.1;font-weight:700}
+.profile .role{margin-top:10px;color:#d6edf4;font-size:15px;line-height:1.4}
+.side-sec{padding:0 28px;margin-top:30px}
+.side-sec h2{font-size:15px;letter-spacing:.6px;text-transform:uppercase;font-weight:700;margin-bottom:12px}
+.contact{list-style:none}
+.contact li{display:flex;gap:12px;align-items:flex-start;margin-bottom:14px;font-size:14px;font-weight:500;word-break:break-word}
+.contact svg{flex:none;width:18px;height:18px;margin-top:2px;fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.contact a{color:#fff}
+.edu b{display:block;font-size:14px}
+.edu span{display:block;color:#d6edf4;font-size:13.5px}
+.edu+.edu{margin-top:12px}
+.side-list{list-style:none}
+.side-list li{font-size:14px;margin:4px 0}
+.side-list small{color:#d6edf4}
+
+footer{max-width:1100px;margin:0 auto 32px;text-align:center;color:var(--muted);font-size:13px}
+.btn{display:inline-block;margin-top:20px;padding:8px 18px;border:1.5px solid rgba(255,255,255,.8);border-radius:30px;color:#fff;font-size:13px;font-weight:600;background:transparent;cursor:pointer;font-family:inherit}
+.btn:hover{background:#fff;color:var(--teal-deep);text-decoration:none}
+
+/* ---------- responsive ---------- */
+@media (max-width:860px){
+  .page{grid-template-columns:1fr;margin:0;border-radius:0}
+  aside{order:-1;background:var(--teal-dark)}
+  .side-inner{position:static}
+  .side-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 20px;background:var(--teal);padding-bottom:10px}
+  .side-sec{margin-top:24px}
+  main{padding:34px 22px 44px}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .skill-group{grid-template-columns:1fr}
+}
+@media (max-width:520px){ .side-grid{grid-template-columns:1fr} }
+
+@media print{
+  body{background:#fff;font-size:12px}
+  .page{box-shadow:none;margin:0;max-width:none;border-radius:0}
+  .btn,footer{display:none}
+  aside,.chip,.badge{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .job{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<main>
+  <section class="summary" id="profile">
+    <h2 class="sec-title"><span class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></span>Career Profile</h2>
+    <p>Full Stack Technical Lead with 15+ years of experience in application development, solution architecture, and team leadership. Expert in PHP 8, Laravel, Node.js, React.js, AWS, MongoDB, MySQL, Microservices, REST APIs, and CI/CD. Leads teams of up to 10 developers through requirement analysis, architecture design, code review, and release delivery. Delivers 5+ features per month, resolves live-site issues, and improves application performance across client-facing web platforms and mobile APIs for clients including Axis Bank and Metropolis Healthcare.</p>
+    <div class="stats">
+      <div class="stat"><b>15+</b><span>Years experience</span></div>
+      <div class="stat"><b>10</b><span>Developers led</span></div>
+      <div class="stat"><b>5+</b><span>Features / month</span></div>
+      <div class="stat"><b>9</b><span>Companies</span></div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2 class="sec-title"><span class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/></svg></span>Experience</h2>
+
+    <article class="job">
+      <div class="job-head"><span class="job-role">Technical Lead<span class="badge">Current</span></span><span class="job-date">Feb 2024 – Present</span></div>
+      <div class="job-co"><span>Sampark Softwares Pvt. Ltd.</span><span class="loc">Mumbai, MH</span></div>
+      <ul>
+        <li>Lead full-stack delivery across client-facing web platforms, maintenance releases, and new application builds, delivering 5+ features per month.</li>
+        <li>Define architecture, database structure, and implementation approach after requirement discussions with managers.</li>
+        <li>Resolve 4 live-site bugs weekly while supporting legacy applications and maintaining production stability.</li>
+        <li>Develop white-labeled web applications and a custom CMS to support business and SEO requirements.</li>
+        <li>Build and maintain microframework APIs for mobile apps using PHP, Laravel, MySQL, and AWS.</li>
+        <li>Optimize and consolidate 3+ applications through performance tuning and scalable design improvements.</li>
+      </ul>
+    </article>
+
+    <article class="job">
+      <div class="job-head"><span class="job-role">Technical Consultant</span><span class="job-date">Sep 2023 – Feb 2024</span></div>
+      <div class="job-co"><span>Paamsteps</span><span class="loc">Mumbai, MH</span></div>
+      <ul>
+        <li>Built a manufacturing automation system from scratch for Veera Gold, aligning system behavior with business requirements.</li>
+        <li>Translated business needs into technical requirements through direct meetings with the owner and the manufacturing unit.</li>
+        <li>Designed a bulk spreadsheet import utility that replaced manual form entry and sped up data processing.</li>
+        <li>Implemented the application stack using AWS, PHP 8, Laravel, Angular, MongoDB, MySQL, and WordPress.</li>
+        <li>Refined manufacturing workflows with business stakeholders to keep delivery aligned with operational needs.</li>
+      </ul>
+    </article>
+
+    <article class="job">
+      <div class="job-head"><span class="job-role">Senior Full Stack Developer</span><span class="job-date">Mar 2022 – Aug 2023</span></div>
+      <div class="job-co"><span>Heyhub Limited</span><span class="loc">Andheri, Mumbai</span></div>
+      <ul>
+        <li>Reviewed 18-20 code changes weekly to improve quality, catch issues early, and support consistent releases.</li>
+        <li>Collaborated with a team of 4-5 developers to deliver requirements and maintain steady development progress.</li>
+        <li>Partnered with product owners to translate requirements into architecture decisions and database designs.</li>
+        <li>Built and enhanced microframework APIs for mobile and admin applications using Laravel, PHP, and AWS.</li>
+        <li>Improved application performance through server tuning, code optimization, and backend refinements.</li>
+        <li>Optimized MongoDB queries and restructured collections to support changing business requirements.</li>
+      </ul>
+    </article>
+
+    <article class="job">
+      <div class="job-head"><span class="job-role">Module Lead</span><span class="job-date">Nov 2018 – Feb 2022</span></div>
+      <div class="job-co"><span>Mphasis Limited</span><span class="loc">Malad, Mumbai</span></div>
+      <ul>
+        <li>Led an 8-10 member team to deliver client requirements on schedule across multiple development workstreams.</li>
+        <li>Conducted 8-10 code reviews weekly to maintain application quality and cross-team alignment.</li>
+        <li>Gathered client requirements and recommended technical solutions, including architecture and database structure.</li>
+        <li>Delivered production fixes and new features across Node.js, React.js, Angular, Yii, and PHP 7.4 applications.</li>
+        <li>Reported project status to the project manager and client manager and escalated issues for timely delivery.</li>
+      </ul>
+    </article>
+
+    <article class="job">
+      <div class="job-head"><span class="job-role">Senior PHP Developer</span><span class="job-date">Jul 2015 – Oct 2018</span></div>
+      <div class="job-co"><span>Peocit Technologies Pvt. Ltd.</span><span class="loc">Andheri, Mumbai</span></div>
+      <ul>
+        <li>Enhanced and fixed bugs in a VPN communication system supporting 10,000 locations for data import and dynamic reporting across client servers in Canada.</li>
+        <li>Led a 2-6 member team, converting CTO and client requirements into task assignments and implementation support.</li>
+        <li>Defined architecture, database structure, and delivery flow with the CTO before development began.</li>
+        <li>Set up AWS and Azure servers and guided developers on technical requirements.</li>
+        <li>Built and maintained applications using PHP, AngularJS, WooCommerce, and Symfony.</li>
+      </ul>
+    </article>
+
+    <article class="job">
+      <div class="job-head"><span class="job-role">Senior PHP Developer</span><span class="job-date">Jul 2013 – Jul 2015</span></div>
+      <div class="job-co"><span>Nityam Software Solution Pvt. Ltd.</span><span class="loc">Mulund, Mumbai</span></div>
+      <ul>
+        <li>Led a team of 7-8 developers delivering school management, eLearning, and mobile application projects.</li>
+        <li>Designed the eLearning portal architecture, including online payments, fee receipts, courses, and tests.</li>
+        <li>Built an automated import feature for Euroschool that created user credentials from XLS uploads.</li>
+        <li>Led client discussions, finalized UI and architecture decisions, and delivered PhoneGap, Ionic, and Cordova projects.</li>
+        <li>Trained developers and reviewed new feature enhancements.</li>
+      </ul>
+    </article>
+
+    <article class="job">
+      <div class="job-head"><span class="job-role">Junior Software Engineer</span><span class="job-date">May 2012 – Jul 2013</span></div>
+      <div class="job-co"><span>Unotech Software Solution Pvt. Ltd.</span><span class="loc">Bhandup, Mumbai</span></div>
+      <ul>
+        <li>Delivered 10-12 feature updates monthly across new and existing applications using Core PHP, CodeIgniter, Cordova, PhoneGap, and AngularJS.</li>
+        <li>Handled 3 client requirements weekly, clarified technical needs, and coordinated with the project manager.</li>
+        <li>Set up AWS servers for client projects and supported infrastructure configuration.</li>
+      </ul>
+    </article>
+
+    <article class="job">
+      <div class="job-head"><span class="job-role">PHP Developer (On-the-Job Trainee)</span><span class="job-date">Feb 2011 – Apr 2012</span></div>
+      <div class="job-co"><span>Micro Technologies India Pvt. Ltd.</span><span class="loc">Turbhe, Navi Mumbai</span></div>
+      <ul>
+        <li>Resolved 5-8 bugs weekly in Core PHP features and live-project enhancements.</li>
+        <li>Integrated a PHP web server with a .NET application on a live server.</li>
+        <li>Built and updated Core PHP, HTML, and CSS features for web and chat applications.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section id="skills">
+    <h2 class="sec-title"><span class="ico"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>Technical Skills</h2>
+    <div class="skill-group"><h3>Backend</h3><div class="chips"><span class="chip">PHP 8</span><span class="chip">Laravel</span><span class="chip">Node.js</span><span class="chip">CodeIgniter</span><span class="chip">Yii</span><span class="chip">Symfony</span><span class="chip">REST API Development</span><span class="chip">Microservices Architecture</span></div></div>
+    <div class="skill-group"><h3>Frontend</h3><div class="chips"><span class="chip">React.js</span><span class="chip">Angular</span><span class="chip">AngularJS</span><span class="chip">JavaScript</span><span class="chip">HTML5</span><span class="chip">CSS3</span></div></div>
+    <div class="skill-group"><h3>Databases</h3><div class="chips"><span class="chip">MySQL</span><span class="chip">MongoDB</span><span class="chip">Database Design</span><span class="chip">Query Optimization</span></div></div>
+    <div class="skill-group"><h3>Cloud &amp; DevOps</h3><div class="chips"><span class="chip">AWS</span><span class="chip">Azure</span><span class="chip">CI/CD</span><span class="chip">Deployment Automation</span><span class="chip">Server Configuration &amp; Tuning</span></div></div>
+    <div class="skill-group"><h3>Mobile &amp; CMS</h3><div class="chips"><span class="chip">Ionic</span><span class="chip">Cordova</span><span class="chip">PhoneGap</span><span class="chip">WordPress</span><span class="chip">WooCommerce</span><span class="chip">Custom CMS</span></div></div>
+    <div class="skill-group"><h3>Leadership &amp; Delivery</h3><div class="chips"><span class="chip">Technical Leadership</span><span class="chip">Team Management</span><span class="chip">Requirement Analysis</span><span class="chip">Code Review</span><span class="chip">Delivery Planning</span><span class="chip">Cross-Team Coordination</span><span class="chip">Stakeholder Management</span></div></div>
+  </section>
+</main>
+
+<aside>
+  <div class="side-inner">
+    <div class="profile">
+      <div class="avatar" aria-hidden="true">SS</div>
+      <h1>Sunil S<br>Shinde</h1>
+      <p class="role">Technical Lead | Full Stack Developer<br>(PHP, Laravel, React, AWS)</p>
+    </div>
+    <div class="side-grid">
+      <div class="side-sec" style="margin-top:6px">
+        <ul class="contact">
+          <li><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/></svg><a href="mailto:sunilss153@gmail.com">sunilss153@gmail.com</a></li>
+          <li><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span>+91 9870087464</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Majiwada, Thane (W), Maharashtra, India</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg><a href="https://linkedin.com/in/sunil-shinde-thane" target="_blank" rel="noopener">sunil-shinde-thane</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="side-sec">
+          <h2>Education</h2>
+          <div class="edu"><b>Bachelor of Science</b><span>Karmaveer Bhimrao Patil College, Vashi</span><span>Mumbai University</span></div>
+        </div>
+        <div class="side-sec">
+          <h2>Core Stack</h2>
+          <ul class="side-list"><li>PHP 8 / Laravel</li><li>Node.js / React.js</li><li>AWS / Azure</li><li>MySQL / MongoDB</li><li>Microservices / REST APIs</li></ul>
+        </div>
+        <div class="side-sec">
+          <h2>Clients</h2>
+          <ul class="side-list"><li>Axis Bank</li><li>Metropolis Healthcare</li><li>Veera Gold</li><li>Euroschool</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</aside>
+
+</div>
+<footer>© Sunil S Shinde</footer>
+</body>
+</html>
